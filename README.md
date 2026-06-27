@@ -110,3 +110,26 @@ Para domínio próprio (ex.: `corretoraflor.com.br`): **Settings → Domains** n
 ---
 
 © CorretoraFlor. Identificação CRECI-SP exibida no rodapé conforme a credencial fornecida.
+
+---
+
+## Atualizações desta versão
+
+- **Logo do topo:** apenas o wordmark `corretoraflor`, em tamanho maior.
+- **Favicon:** flor enviada (`assets/img/favicon.png`).
+- **Hero:** foto de fundo real (`assets/img/background_principal.png`) com leve escurecimento à esquerda para legibilidade do texto.
+- **Bloco do hero:** mantido apenas “Atendimento Personalizado”.
+- **Ícones:** Serviços e Sobre usam as imagens douradas enviadas (`assets/img/*_outlines-golden.png`).
+- **Imóveis:** cada card carrega a **imagem oficial do empreendimento** direto do site da Plano&Plano. Se alguma não carregar (rede/bloqueio), o card mostra automaticamente um fundo decorativo elegante. Para garantir 100% de exibição, você pode baixar a foto de cada empreendimento e salvar em `assets/img/`, trocando o campo `img` no `assets/js/main.js`.
+- **Depoimentos:** carrossel com setas, indicadores, arrasto no celular e troca automática a cada 6s.
+
+## Instagram — feed real e automático (opcional)
+
+A grade atual usa imagens reais dos empreendimentos e leva ao perfil **@acorretoraflor**.
+Para exibir os **posts reais e atualizados sozinhos**, use um widget gratuito:
+
+1. Acesse **snapwidget.com** (ou **behold.so** / **elfsight.com**) e crie um widget de grade do Instagram.
+2. Conecte o perfil `@acorretoraflor` e copie o código (um `<iframe>`).
+3. No `index.html`, substitua o conteúdo da `<div id="instaGrid">` por esse `<iframe>`.
+
+Pronto — o site passa a mostrar os posts reais automaticamente.
