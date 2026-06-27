@@ -271,6 +271,22 @@ function initReveal() {
   $$(".reveal:not(.in)").forEach(el => io.observe(el));
 }
 
+/* ============================================================ HERO SLIDESHOW */
+function initHeroSlideshow() {
+  const slides = $$(".hero-slide");
+  if (!slides.length) return;
+  let current = Math.floor(Math.random() * slides.length);
+  slides[current].classList.add("is-active");
+  if (slides.length < 2) return;
+  setInterval(() => {
+    let next;
+    do { next = Math.floor(Math.random() * slides.length); } while (next === current);
+    slides[current].classList.remove("is-active");
+    slides[next].classList.add("is-active");
+    current = next;
+  }, 5000);
+}
+
 /* ============================================================ INIT */
 document.addEventListener("DOMContentLoaded", () => {
   $("#year").textContent = new Date().getFullYear();
@@ -280,6 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderBlog();
   initWhatsApp();
   initHeader();
+  initHeroSlideshow();
   initFilters();
   initCarousel();
   initForm();
