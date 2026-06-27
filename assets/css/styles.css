@@ -93,6 +93,8 @@ section[id]{scroll-margin-top:88px}
   white-space:nowrap;
 }
 .btn svg{flex:none}
+.btn-ico{width:17px;height:17px;flex:none;object-fit:contain}
+.btn-gold .btn-ico{filter:brightness(0) saturate(100%) opacity(.78)}
 .btn-gold{
   background:var(--gold-grad);color:#1a1305;font-weight:500;
   box-shadow:0 10px 30px -12px rgba(201,162,75,.65);
@@ -152,7 +154,7 @@ section[id]{scroll-margin-top:88px}
 /* ============================================================
    HERO
    ============================================================ */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding-top:78px;overflow:hidden}
+.hero{position:relative;min-height:90vh;display:flex;align-items:center;padding-top:78px;overflow:hidden}
 .hero-bg{position:absolute;inset:0;z-index:0}
 .hero-photo{position:absolute;inset:0;
   background:url('../img/background_principal.png') center right/cover no-repeat;

@@ -179,7 +179,9 @@ function renderInstagram() {
 
 /* ============================================================ BLOG */
 function renderBlog() {
-  $("#blogGrid").innerHTML = ARTICLES.map(a => `
+  const grid = $("#blogGrid");
+  if (!grid) return;
+  grid.innerHTML = ARTICLES.map(a => `
     <article class="blog-card">
       <div class="blog-media" style="background:linear-gradient(150deg,#211d16,#0d0b08)">
         <svg viewBox="0 0 120 120" fill="none" stroke="rgba(201,162,75,.5)" stroke-width="1.3" width="46%"><circle cx="60" cy="60" r="6"/><path d="M60 60C60 38 46 30 46 30M60 60C74 38 90 32 90 32M60 60C66 84 60 110 60 110M60 60C38 72 30 96 30 96M60 60C86 76 96 96 96 96"/></svg>
