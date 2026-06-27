@@ -63,6 +63,22 @@ const PROPERTIES = [
     grad: "linear-gradient(150deg,#26201b,#0e0b09)",
     link: "https://www.comprarseuap.com.br/corretoraflor/imoveis/meu-planosaomiguel",
   },
+  {
+    nome: "Longitude Estação Dom Bosco", cidade: "São Paulo", bairro: "Itaquera",
+    preco: "Sob consulta", dorms: "Studio / 1", area: "Multidorm",
+    tipo: "apartamento", status: "Lançamento",
+    img: "https://cdn.longitude.com.br/2025/08/14/17/09/ed01ce5eda5f8b367b2d3d0d2d05c476292f5ff8.jpg",
+    grad: "linear-gradient(150deg,#241f2a,#0d0c10)",
+    link: "https://www.longitude.com.br/imoveis/sao-paulo/apartamento/estacao-dom-bosco",
+  },
+  {
+    nome: "Longitude Estação Guaianases", cidade: "São Paulo", bairro: "Guaianases",
+    preco: "Sob consulta", dorms: "Studio a 2", area: "Multidorm",
+    tipo: "apartamento", status: "Em breve",
+    img: "https://cdn.longitude.com.br/2026/05/14/14/28/8762d32b152eab1dee4fb1f411959253f8afc4c3.jpg",
+    grad: "linear-gradient(150deg,#1d2620,#0a0e0b)",
+    link: "https://www.longitude.com.br/imoveis/sao-paulo/apartamento/longitude-estacao-guaianases",
+  },
 ];
 
 const TESTIMONIALS = [
